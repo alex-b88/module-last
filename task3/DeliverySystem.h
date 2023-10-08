@@ -9,6 +9,17 @@
 #include "InsuredOrder.h"
 #include "fstream"
 
+struct compareOrder{
+    bool operator()(const Order* left, const Order*right)const{
+        if(left->getId()<=right->getId())
+            return true;
+        /*else if(left->getId()==right->getId())
+            return left->getIsbn()<right->getIsbn();*/
+        else{
+            return false;
+        }
+    }
+};
 
 class DeliverySystem {
 protected:

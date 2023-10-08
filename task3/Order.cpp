@@ -50,6 +50,8 @@ Order::Order(int id) {
     date_time+= to_string(date.getSec()%10);
 }
 
+Order::~Order() {}
+
 /*bool Order::operator < (const Order &obj)  {
     return this->getId()<obj.getId();
 }*/

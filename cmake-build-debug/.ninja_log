@@ -62,3 +62,11 @@
 12	1668	1696704621494172184	CMakeFiles/ModuleLast.dir/main.cpp.o	ac82ff78722cb24b
 15	1995	1696704621821375367	CMakeFiles/ModuleLast.dir/task3/DeliverySystem.cpp.o	32560001d3fe9802
 1995	2144	1696704621975226460	ModuleLast	d66ccfce6536157c
+12	1633	1696769602888522914	CMakeFiles/ModuleLast.dir/main.cpp.o	ac82ff78722cb24b
+12	1806	1696769603065168349	CMakeFiles/ModuleLast.dir/task3/DeliverySystem.cpp.o	32560001d3fe9802
+1806	1968	1696769603230788231	ModuleLast	d66ccfce6536157c
+7	1062	1696773391161486999	CMakeFiles/ModuleLast.dir/task3/Order.cpp.o	3286332daa760efb
+7	1083	1696773391183071685	CMakeFiles/ModuleLast.dir/task3/OrdinaryOrder.cpp.o	e42f3bfbc8059443
+7	1088	1696773391186372954	CMakeFiles/ModuleLast.dir/task3/InsuredOrder.cpp.o	3d4f11800ffdf7d7
+7	1089	1696773391186032514	CMakeFiles/ModuleLast.dir/task3/ExpressOrder.cpp.o	5b0b0c9d9634745e
+6	1148	1696773391249911520	CMakeFiles/ModuleLast.dir/main.cpp.o	ac82ff78722cb24b

@@ -182,6 +182,6 @@ void DeliverySystem::loadFromFile() {
         }
     }
     file.close();
-    sort(obj.begin(),obj.end());
+    sort(obj.begin(),obj.end(),compareOrder);
 }
 

@@ -14,6 +14,7 @@ protected:
 public:
     Order();
     Order(int id);
+    virtual ~Order();
 
     int getYear()const;
     int getMonth()const;
