@@ -62,7 +62,7 @@ void DeliverySystem::showAllOrders() {
         cout <<"Database is empty\n";
         return;
     }
-    sort(obj.begin(),obj.end());
+    sort(obj.begin(),obj.end(),compareOrder());
     for (int i = 0; i < obj.size(); ++i) {
         obj[i]->showOrder();
         cout << endl << endl;
@@ -79,6 +79,7 @@ void DeliverySystem::Search() const {
     cout << "3. By month" << endl;
     cout << "4. By day" << endl;
     cout << "Choice: " << endl;
+    cin >> menu;
     switch(menu){
         case 1:{
             string t_tmp;
@@ -182,6 +183,6 @@ void DeliverySystem::loadFromFile() {
         }
     }
     file.close();
-    sort(obj.begin(),obj.end(),compareOrder);
+ //   sort(obj.begin(),obj.end(),compareOrder());
 }
 
