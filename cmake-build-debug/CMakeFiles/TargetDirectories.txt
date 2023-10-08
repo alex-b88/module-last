@@ -1,0 +1,3 @@
+/Users/admin/CLionProjects/ModuleLast/cmake-build-debug/CMakeFiles/ModuleLast.dir
+/Users/admin/CLionProjects/ModuleLast/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/admin/CLionProjects/ModuleLast/cmake-build-debug/CMakeFiles/rebuild_cache.dir
