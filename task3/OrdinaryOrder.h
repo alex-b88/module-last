@@ -8,7 +8,6 @@
 class OrdinaryOrder : public Order {
 
 public:
-    OrdinaryOrder();
     OrdinaryOrder(int id);
     OrdinaryOrder(int id, int year, int month, int day, int hour, int min, int sec);
 

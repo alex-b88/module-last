@@ -10,7 +10,6 @@ protected:
     string company;
     double amount;
 public:
-    InsuredOrder();
     InsuredOrder(int id, string company, double amount);
     InsuredOrder(int id,int year, int month, int day, int hour, int min, int sec, string company, double amount);
 
@@ -19,8 +18,6 @@ public:
     string getCompany()const;
     double getAmount()const;
     string getDateTime()const;
-
-/*    bool operator < (const InsuredOrder& obj);*/
 
     string getType()const override;
     string toString() override;

@@ -17,14 +17,41 @@ int main() {
     obj.showMaxScool();*/
 
 //task 3
-
     DeliverySystem base;
-    base.loadFromFile();
-    base.showAllOrders();
-    base.addOrderToBase();
-    base.SortOrders();
-  //  base.saveToFile();
- //   base.saveToFile();
+int main_menu;
+do{
+    cout <<"Main menu: " << endl;
+    cout <<"1. Add order" << endl;
+    cout <<"2. Find order" << endl;
+    cout <<"3. Show all orders" << endl;
+    cout <<"4. Save to file" << endl;
+    cout <<"5. Load from file" << endl;
+    cout <<"0. Exit" << endl;
+    cout <<"Choice: ";
+    cin >> main_menu;
+    switch (main_menu) {
+        case 1:{
+            base.addOrderToBase();
+            break;
+        }
+        case 2:{
+            base.Search();
+            break;
+        }
+        case 3:{
+            base.showAllOrders();
+            break;
+        }
+        case 4:{
+            base.saveToFile();
+        }
+        case 5:{
+            base.loadFromFile();
+        }
+    }
+
+}while(main_menu!=0);
+
 
     return 0;
 }

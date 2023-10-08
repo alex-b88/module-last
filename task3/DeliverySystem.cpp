@@ -1,6 +1,5 @@
 #include "DeliverySystem.h"
 
-
 DeliverySystem::DeliverySystem() {}
 DeliverySystem::~DeliverySystem() {
     for (int i = 0; i <obj.size(); ++i) {
@@ -77,7 +76,7 @@ void DeliverySystem::Search() const {
     cout << "2. By year" << endl;
     cout << "3. By month" << endl;
     cout << "4. By day" << endl;
-    cout << "Choice: " << endl;
+    cout << "Choice: ";
     cin >> menu;
     switch(menu){
         case 1:{
@@ -146,8 +145,9 @@ void DeliverySystem::saveToFile() {
         for (int i = 0; i < obj.size(); ++i) {
             file << obj[i]->toString() << endl;
         }
+        file.close();
+        cout <<"Data saved to file!" << endl;
     }
-    file.close();
 }
 
 void DeliverySystem::loadFromFile() {
@@ -180,8 +180,11 @@ void DeliverySystem::loadFromFile() {
                 }
             }
         }
+        file.close();
+        cout <<"Data from file load successfully!" << endl;
+        return;
     }
-    file.close();
+    cout <<"File not found!\n Nothing loaded!" << endl;
 }
 
 void DeliverySystem::SortOrders() {
@@ -213,6 +216,5 @@ void DeliverySystem::SortOrders() {
     }
 
     }while(menu!=0);
-
 }
 

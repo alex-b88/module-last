@@ -1,34 +1,8 @@
-
 #include "Order.h"
 
-Order::Order() {
-}
 
 Order::Order(int id) {
     this->id=id;
-    DT date;
-    yy=date.getYear();
-    mm=date.getMonth();
-    dd=date.getDay();
-    hh=date.getHour();
-    min=date.getMin();
-    ss=date.getSec();
-/*    date_time+= to_string(date.getYear());
-    date_time+=' ';
-    date_time+= to_string(date.getMonth()/10);
-    date_time+= to_string(date.getMonth()%10);
-    date_time+=' ';
-    date_time+= to_string(date.getDay()/10);
-    date_time+= to_string(date.getDay()%10);
-    date_time+=' ';
-    date_time+= to_string(date.getHour()/10);
-    date_time+= to_string(date.getHour()%10);
-    date_time+=' ';
-    date_time+= to_string(date.getMin()/10);
-    date_time+= to_string(date.getMin()%10);
-    date_time+=' ';
-    date_time+= to_string(date.getSec()/10);
-    date_time+= to_string(date.getSec()%10);*/
 }
 
 Order::~Order() {}

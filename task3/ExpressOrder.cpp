@@ -1,11 +1,4 @@
-
 #include "ExpressOrder.h"
-
-ExpressOrder::ExpressOrder() {
-/*    id=0;
-    courier="not set";
-    daysToDeliver=0;*/
-}
 
 ExpressOrder::ExpressOrder(int id, string courier, int daysToDeliver)
 :Order(id)
@@ -94,7 +87,6 @@ void ExpressOrder::showOrder() const {
     cout <<"Type: ExpressOrder" <<" Order #" << id << " Order date: " << dd << "-" << mm <<"-" << yy <<" ";
     cout <<"Order time: " << hh <<":" << min<<":"<<ss << endl;
     cout << "Courier: " << courier <<" " <<"Days to Deliver: " << daysToDeliver;
-    cout << "\n" << date_time << endl;
 }
 
 string ExpressOrder::getType() const {
@@ -104,7 +96,3 @@ string ExpressOrder::getType() const {
 string ExpressOrder::getDateTime() const {
     return date_time;
 }
-
-/*bool ExpressOrder::operator<(const ExpressOrder &obj) {
-    return this->getType()<obj.getType();
-}*/

@@ -1,16 +1,5 @@
-
 #include "OrdinaryOrder.h"
 
-OrdinaryOrder::OrdinaryOrder() :Order(){
-/*    DT date;
-    yy=date.getYear();
-    mm=date.getMonth();
-    dd=date.getDay();
-    hh=date.getHour();
-    min=date.getMin();
-    ss=date.getSec();
-    id=0;*/
-}
 OrdinaryOrder::OrdinaryOrder(int id) : Order(id) {
     DT date;
     yy=date.getYear();
@@ -49,7 +38,6 @@ string OrdinaryOrder::toString() {
 void OrdinaryOrder::showOrder() const {
     cout <<"Type: OrdinaryOrder" <<" Order #" << id << " Order date: " << dd << "-" << mm <<"-" << yy <<" ";
     cout <<"Order time: " << hh <<":" << min<<":"<<ss;
-    cout << "\n" << date_time << endl;
 }
 
 OrdinaryOrder::OrdinaryOrder(int id, int year, int month, int day, int hour, int min, int sec)

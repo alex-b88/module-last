@@ -1,18 +1,4 @@
-
 #include "InsuredOrder.h"
-
-InsuredOrder::InsuredOrder() {
-/*    DT date;
-    yy=date.getYear();
-    mm=date.getMonth();
-    dd=date.getDay();
-    hh=date.getHour();
-    min=date.getMin();
-    ss=date.getSec();
-    id=0;
-    company="not seted";
-    amount=0;*/
-}
 
 InsuredOrder::InsuredOrder(int id, string company, double amount)
 :Order(id)
@@ -76,7 +62,6 @@ void InsuredOrder::showOrder() const {
         cout <<"Type: InsuredOrder" <<" Order #" << id << " Order date: " << dd << "-" << mm <<"-" << yy <<" ";
         cout <<"Order time: " << hh <<":" << min<<":"<<ss << endl;
         cout << "Company: " << company <<" " <<"Amount: " << amount;
-        cout << "\n" << date_time << endl;
 }
 
 InsuredOrder::InsuredOrder(int id, int year, int month, int day, int hour, int min, int sec, string company,
@@ -113,6 +98,3 @@ string InsuredOrder::getDateTime() const {
     return date_time;
 }
 
-/*bool InsuredOrder::operator<(const InsuredOrder &obj) {
-    return this->getType()<obj.getType();
-}*/

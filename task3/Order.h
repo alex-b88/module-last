@@ -12,7 +12,6 @@ protected:
     int id;
     int yy,mm,dd,hh,min,ss; //TODO setter and getter in case
 public:
-    Order();
     Order(int id);
     virtual ~Order();
 
