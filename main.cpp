@@ -20,8 +20,9 @@ int main() {
 
     DeliverySystem base;
     base.loadFromFile();
-  //  base.addOrderToBase();
     base.showAllOrders();
+    base.addOrderToBase();
+    base.SortOrders();
   //  base.saveToFile();
  //   base.saveToFile();
 

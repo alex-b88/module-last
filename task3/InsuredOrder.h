@@ -18,8 +18,9 @@ public:
     void setAmount(double amount);
     string getCompany()const;
     double getAmount()const;
+    string getDateTime()const;
 
-    bool operator < (const InsuredOrder& obj);
+/*    bool operator < (const InsuredOrder& obj);*/
 
     string getType()const override;
     string toString() override;

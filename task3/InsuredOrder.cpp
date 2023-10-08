@@ -2,8 +2,16 @@
 #include "InsuredOrder.h"
 
 InsuredOrder::InsuredOrder() {
+/*    DT date;
+    yy=date.getYear();
+    mm=date.getMonth();
+    dd=date.getDay();
+    hh=date.getHour();
+    min=date.getMin();
+    ss=date.getSec();
+    id=0;
     company="not seted";
-    amount=0;
+    amount=0;*/
 }
 
 InsuredOrder::InsuredOrder(int id, string company, double amount)
@@ -11,6 +19,29 @@ InsuredOrder::InsuredOrder(int id, string company, double amount)
 {
     setCompany(company);
     setAmount(amount);
+    DT date;
+    yy=date.getYear();
+    mm=date.getMonth();
+    dd=date.getDay();
+    hh=date.getHour();
+    min=date.getMin();
+    ss=date.getSec();
+    date_time+= to_string(yy);
+    date_time+=' ';
+    date_time+= to_string(mm/10);
+    date_time+= to_string(mm%10);
+    date_time+=' ';
+    date_time+= to_string(dd/10);
+    date_time+= to_string(dd%10);
+    date_time+=' ';
+    date_time+= to_string(hh/10);
+    date_time+= to_string(hh%10);
+    date_time+=' ';
+    date_time+= to_string(min/10);
+    date_time+= to_string(min%10);
+    date_time+=' ';
+    date_time+= to_string(ss/10);
+    date_time+= to_string(ss%10);
 }
 
 void InsuredOrder::setCompany(string company) {
@@ -45,6 +76,7 @@ void InsuredOrder::showOrder() const {
         cout <<"Type: InsuredOrder" <<" Order #" << id << " Order date: " << dd << "-" << mm <<"-" << yy <<" ";
         cout <<"Order time: " << hh <<":" << min<<":"<<ss << endl;
         cout << "Company: " << company <<" " <<"Amount: " << amount;
+        cout << "\n" << date_time << endl;
 }
 
 InsuredOrder::InsuredOrder(int id, int year, int month, int day, int hour, int min, int sec, string company,
@@ -59,9 +91,28 @@ InsuredOrder::InsuredOrder(int id, int year, int month, int day, int hour, int m
     this->ss=sec;
     this->company=company;
     this->amount=amount;
+    date_time+= to_string(year);
+    date_time+=' ';
+    date_time+= to_string(month/10);
+    date_time+= to_string(month%10);
+    date_time+=' ';
+    date_time+= to_string(day/10);
+    date_time+= to_string(day%10);
+    date_time+=' ';
+    date_time+= to_string(hour/10);
+    date_time+= to_string(hour%10);
+    date_time+=' ';
+    date_time+= to_string(min/10);
+    date_time+= to_string(min%10);
+    date_time+=' ';
+    date_time+= to_string(sec/10);
+    date_time+= to_string(sec%10);
 }
 
+string InsuredOrder::getDateTime() const {
+    return date_time;
+}
 
-bool InsuredOrder::operator<(const InsuredOrder &obj) {
+/*bool InsuredOrder::operator<(const InsuredOrder &obj) {
     return this->getType()<obj.getType();
-}
+}*/

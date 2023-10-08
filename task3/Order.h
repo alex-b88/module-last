@@ -19,10 +19,12 @@ public:
     int getYear()const;
     int getMonth()const;
     int getDay()const;
+    int getHour()const;
+    int getMin()const;
+    int getSec()const;
     int getId()const;
+    string getString()const;
 
-
-//    bool operator < (const Order& obj);
     virtual string getType()const=0;
     virtual string toString()=0;
     virtual void showOrder()const=0;

@@ -57,12 +57,11 @@ void DeliverySystem::addOrderToBase() {
 
 }
 
-void DeliverySystem::showAllOrders() {
+void DeliverySystem::showAllOrders()const {
     if(obj.begin()==obj.end()){
         cout <<"Database is empty\n";
         return;
     }
-    sort(obj.begin(),obj.end(),compareOrder());
     for (int i = 0; i < obj.size(); ++i) {
         obj[i]->showOrder();
         cout << endl << endl;
@@ -166,23 +165,54 @@ void DeliverySystem::loadFromFile() {
                 }
                 if(tokens[0]=="ExpressOrder"){
                     obj.push_back(new ExpressOrder(stoi(tokens[1]),stoi(tokens[2]),stoi(tokens[3]),stoi(tokens[4]),stoi(tokens[5]),stoi(tokens[6]),stoi(tokens[7]),tokens[8],stoi(tokens[9])));
-                    DeliverySystem::number=stoi(tokens[1]);
+                    DeliverySystem::number++;
                     tokens.clear();
                 }
                 else if(tokens[0]=="InsuredOrder"){
                     obj.push_back(new InsuredOrder(stoi(tokens[1]),stoi(tokens[2]),stoi(tokens[3]),stoi(tokens[4]),stoi(tokens[5]),stoi(tokens[6]),stoi(tokens[7]),tokens[8],stod(tokens[9])));
-                    DeliverySystem::number=stoi(tokens[1]);
+                    DeliverySystem::number++;
                     tokens.clear();
                 }
                 else if(tokens[0]=="OrdinaryOrder"){
                     obj.push_back(new OrdinaryOrder(stoi(tokens[1]),stoi(tokens[2]),stoi(tokens[3]),stoi(tokens[4]),stoi(tokens[5]),stoi(tokens[6]),stoi(tokens[7])));
-                    DeliverySystem::number=stoi(tokens[1]);
+                    DeliverySystem::number++;
                     tokens.clear();
                 }
             }
         }
     }
     file.close();
- //   sort(obj.begin(),obj.end(),compareOrder());
+}
+
+void DeliverySystem::SortOrders() {
+    int menu;
+    do{
+    cout <<"Sort menu:"<< endl;
+    cout <<"1.Sort by ID" << endl;
+    cout <<"2.Sort by Type" << endl;
+    cout <<"3.Sort by Date" << endl;
+    cout <<"0.Exit" << endl;
+    cout <<"Choice: ";
+    cin >> menu;
+    switch(menu){
+        case 1:{
+            sort(obj.begin(),obj.end(), compareByID());
+            showAllOrders();
+            break;
+        }
+        case 2:{
+            sort(obj.begin(),obj.end(),compareByType());
+            showAllOrders();
+            break;
+        }
+        case 3:{
+            sort(obj.begin(),obj.end(), compareByDateTime());
+            showAllOrders();
+            break;
+        }
+    }
+
+    }while(menu!=0);
+
 }
 

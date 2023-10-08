@@ -20,11 +20,13 @@ public:
     string getCourier()const;
     int getDaysToDeliver()const;
 
-    bool operator < (const ExpressOrder& obj);
+/*    bool operator < (const ExpressOrder& obj);*/
 
     string getType()const override;
     string toString() override;
     void showOrder()const override;
+
+    string getDateTime()const;
 };
 
 
