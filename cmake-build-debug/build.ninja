@@ -55,18 +55,6 @@ build CMakeFiles/ModuleLast.dir/main.cpp.o: CXX_COMPILER__ModuleLast_unscanned_D
   OBJECT_DIR = CMakeFiles/ModuleLast.dir
   OBJECT_FILE_DIR = CMakeFiles/ModuleLast.dir
 
-build CMakeFiles/ModuleLast.dir/task1/MemoryBlock.cpp.o: CXX_COMPILER__ModuleLast_unscanned_Debug /Users/admin/CLionProjects/ModuleLast/task1/MemoryBlock.cpp || cmake_object_order_depends_target_ModuleLast
-  DEP_FILE = CMakeFiles/ModuleLast.dir/task1/MemoryBlock.cpp.o.d
-  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/ModuleLast.dir
-  OBJECT_FILE_DIR = CMakeFiles/ModuleLast.dir/task1
-
-build CMakeFiles/ModuleLast.dir/task1/Cell.cpp.o: CXX_COMPILER__ModuleLast_unscanned_Debug /Users/admin/CLionProjects/ModuleLast/task1/Cell.cpp || cmake_object_order_depends_target_ModuleLast
-  DEP_FILE = CMakeFiles/ModuleLast.dir/task1/Cell.cpp.o.d
-  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/ModuleLast.dir
-  OBJECT_FILE_DIR = CMakeFiles/ModuleLast.dir/task1
-
 build CMakeFiles/ModuleLast.dir/task2/Student.cpp.o: CXX_COMPILER__ModuleLast_unscanned_Debug /Users/admin/CLionProjects/ModuleLast/task2/Student.cpp || cmake_object_order_depends_target_ModuleLast
   DEP_FILE = CMakeFiles/ModuleLast.dir/task2/Student.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
@@ -121,6 +109,18 @@ build CMakeFiles/ModuleLast.dir/task3/DeliverySystem.cpp.o: CXX_COMPILER__Module
   OBJECT_DIR = CMakeFiles/ModuleLast.dir
   OBJECT_FILE_DIR = CMakeFiles/ModuleLast.dir/task3
 
+build CMakeFiles/ModuleLast.dir/task1/MemoryBlock.cpp.o: CXX_COMPILER__ModuleLast_unscanned_Debug /Users/admin/CLionProjects/ModuleLast/task1/MemoryBlock.cpp || cmake_object_order_depends_target_ModuleLast
+  DEP_FILE = CMakeFiles/ModuleLast.dir/task1/MemoryBlock.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/ModuleLast.dir
+  OBJECT_FILE_DIR = CMakeFiles/ModuleLast.dir/task1
+
+build CMakeFiles/ModuleLast.dir/task1/MemoryManager.cpp.o: CXX_COMPILER__ModuleLast_unscanned_Debug /Users/admin/CLionProjects/ModuleLast/task1/MemoryManager.cpp || cmake_object_order_depends_target_ModuleLast
+  DEP_FILE = CMakeFiles/ModuleLast.dir/task1/MemoryManager.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/ModuleLast.dir
+  OBJECT_FILE_DIR = CMakeFiles/ModuleLast.dir/task1
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ModuleLast
@@ -129,7 +129,7 @@ build CMakeFiles/ModuleLast.dir/task3/DeliverySystem.cpp.o: CXX_COMPILER__Module
 #############################################
 # Link the executable ModuleLast
 
-build ModuleLast: CXX_EXECUTABLE_LINKER__ModuleLast_Debug CMakeFiles/ModuleLast.dir/main.cpp.o CMakeFiles/ModuleLast.dir/task1/MemoryBlock.cpp.o CMakeFiles/ModuleLast.dir/task1/Cell.cpp.o CMakeFiles/ModuleLast.dir/task2/Student.cpp.o CMakeFiles/ModuleLast.dir/task2/Spisok.cpp.o CMakeFiles/ModuleLast.dir/task3/Order.cpp.o CMakeFiles/ModuleLast.dir/task3/DT.cpp.o CMakeFiles/ModuleLast.dir/task3/InsuredOrder.cpp.o CMakeFiles/ModuleLast.dir/task3/Exeption.cpp.o CMakeFiles/ModuleLast.dir/task3/ExpressOrder.cpp.o CMakeFiles/ModuleLast.dir/task3/OrdinaryOrder.cpp.o CMakeFiles/ModuleLast.dir/task3/DeliverySystem.cpp.o
+build ModuleLast: CXX_EXECUTABLE_LINKER__ModuleLast_Debug CMakeFiles/ModuleLast.dir/main.cpp.o CMakeFiles/ModuleLast.dir/task2/Student.cpp.o CMakeFiles/ModuleLast.dir/task2/Spisok.cpp.o CMakeFiles/ModuleLast.dir/task3/Order.cpp.o CMakeFiles/ModuleLast.dir/task3/DT.cpp.o CMakeFiles/ModuleLast.dir/task3/InsuredOrder.cpp.o CMakeFiles/ModuleLast.dir/task3/Exeption.cpp.o CMakeFiles/ModuleLast.dir/task3/ExpressOrder.cpp.o CMakeFiles/ModuleLast.dir/task3/OrdinaryOrder.cpp.o CMakeFiles/ModuleLast.dir/task3/DeliverySystem.cpp.o CMakeFiles/ModuleLast.dir/task1/MemoryBlock.cpp.o CMakeFiles/ModuleLast.dir/task1/MemoryManager.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/ModuleLast.dir
   POST_BUILD = :

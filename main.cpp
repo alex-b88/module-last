@@ -1,22 +1,26 @@
-/*#include "task1/MemoryBlock.h"
+#include "task1/MemoryBlock.h"
+#include "task1/MemoryManager.h"
 #include "task2/Spisok.h"
-#include "task3/Order.h"*/
-
+#include "task3/Order.h"
 #include "task3/DeliverySystem.h"
 
 int DeliverySystem::number=0;
 
 int main() {
- /*   MemoryBlock obj;
-    obj.showMemory();
-    obj.setMemory();
-    obj.showMemory();*/
+//task 1
+/*
+    MemoryManager memoryManager;
+    memoryManager.allocateMemory(12);
+    memoryManager.allocateMemory(30);
+*/
+
 //task2
 /*    Spisok obj;
     obj.showMylist();
     obj.showMaxScool();*/
 
 //task 3
+/*
     DeliverySystem base;
 int main_menu;
 do{
@@ -51,6 +55,7 @@ do{
     }
 
 }while(main_menu!=0);
+*/
 
 
     return 0;

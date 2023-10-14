@@ -5,10 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(ModuleLast main.cpp
         includes.h
-        task1/MemoryBlock.cpp
-        task1/MemoryBlock.h
-        task1/Cell.cpp
-        task1/Cell.h
         task2/Student.cpp
         task2/Student.h
         task2/Spisok.cpp
@@ -23,4 +19,8 @@ add_executable(ModuleLast main.cpp
         task3/ExpressOrder.cpp
         task3/OrdinaryOrder.cpp
         task3/DeliverySystem.cpp
-        task3/DeliverySystem.h)
+        task3/DeliverySystem.h
+        task1/MemoryBlock.cpp
+        task1/MemoryBlock.h
+        task1/MemoryManager.cpp
+        task1/MemoryManager.h)
